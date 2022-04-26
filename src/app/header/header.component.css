@@ -1,0 +1,13 @@
+.app-header {
+  display: flex;
+  justify-content: center;
+  height: 4.5vh;
+}
+
+.value-input {
+  font-size: 2rem;
+}
+
+.add-button {
+  display: flex
+}

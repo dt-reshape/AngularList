@@ -1,0 +1,14 @@
+<div class="app-list">
+  <table class="list-table">
+    <tr class="table-row" *ngFor="let item of list">
+      <td> {{ item.date}}</td>
+      <td> {{ item.value }}</td>
+      <app-button
+        class="list-delete-button"
+        (click)="onClick(item.id)"
+        [label]="deleteButtonLabel"
+      ></app-button>
+    </tr>
+  </table>
+  <label *ngIf="!list.length" class="empty-data">{{ emptyListLabel }}</label>
+</div>
